@@ -1,0 +1,28 @@
+version: "3.5"
+services:
+    api:
+        build: 
+            context: ./api
+            dockerfile: ./Dockerfile
+        command: npm start
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
+        ports:
+            - 3000:3000
+        depends_on:
+            - db
+    db:
+        image: "postgres"
+        env_file:
+            - .env.db
+        volumes:
+            - db:/var/lib/postgresql/data/
+volumes:
+    db:
+
+    # web:
+    #     build:
+    #         context: ./web
+    #         dockerfile: ./Dockerfile
+    #     ports:
+    #         - 3001:3001

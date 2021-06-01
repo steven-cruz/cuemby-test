@@ -1,0 +1,32 @@
+{
+  "name": "prueba-cuemby",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "extract": "node extract.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steven-cruz/cuemby-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steven-cruz/cuemby-test/issues"
+  },
+  "homepage": "https://github.com/steven-cruz/cuemby-test#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "fastify": "^3.16.2",
+    "fastify-cors": "^6.0.1",
+    "fastly": "^2.2.1",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^2.0.7",
+    "pg": "^8.6.0",
+    "sequelize": "^6.6.2"
+  }
+}
