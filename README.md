@@ -79,6 +79,8 @@ Para iniciar una búsqueda en el campo de **Search** pondremos una palabra o let
 Para poder ver todos los jugadores pertenecientes a determinado equipo debemos cambiar la opción de **Name** por **Team** e introducir el nombre del equipo por completo seguido de enter.
 <img src="https://github.com/steven-cruz/cuemby-test/blob/master/docs/img/Selecci%C3%B3n_063.png?raw=true">
 
+Para obtener mas información sobre cada jugador podemos presionar el botón **See more** ubicado en la tarjeta de cada uno.
+<img src="https://github.com/steven-cruz/cuemby-test/blob/master/docs/img/Selecci%C3%B3n_064.png?raw=true">
 
 ### Analice las pruebas end-to-end 🔩
 
