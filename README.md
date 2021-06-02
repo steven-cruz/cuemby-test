@@ -1,6 +1,6 @@
 # Cuemby FIFA12 Ultime Team
 
-Cuemby Test es una es una prueba que pretende construir y consumir una replica de la api FIFA 12 Ultime Team permitiendo hacer busqueda de judaores y equipos.
+Cuemby Test es una prueba que pretende construir y consumir una replica de la api FIFA 12 Ultime Team permitiendo hacer busqueda de judaores y equipos.
 
 ## Comenzando 🚀
 
@@ -47,7 +47,7 @@ sudo docker-compose up --build
 * Cuando haya terminado, abrimos una nueva terminal y ejecutamos los siguientes comandos:
 
 ```
-sudo ps
+sudo docker ps
 ```
 _En la información mostrada buscaremos la columna **NAMES**  y veremos en nombre de nuestro contenedor, en nuestro caso es **cuemby-test-master_api_1**_
 
