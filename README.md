@@ -73,7 +73,12 @@ http://localhost:8080/
 ```
 
 Para iniciar una búsqueda en el campo de **Search** pondremos una palabra o letra clave para obtener los resultados de  los jugadores, como opciones podemos filtrar las búsquedas por orden ascendente o descendente.
+<img src="https://github.com/steven-cruz/cuemby-test/blob/master/docs/img/Selecci%C3%B3n_062.png?raw=true">
 <img src="https://github.com/steven-cruz/cuemby-test/blob/master/docs/img/Selecci%C3%B3n_061.png?raw=true">
+
+Para poder ver todos los jugadores pertenecientes a determinado equipo debemos cambiar la opción de **Name** por **Team** e introducir el nombre del equipo por completo seguido de enter.
+<img src="https://github.com/steven-cruz/cuemby-test/blob/master/docs/img/Selecci%C3%B3n_063.png?raw=true">
+
 
 ### Analice las pruebas end-to-end 🔩
 
