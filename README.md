@@ -5,14 +5,19 @@ _Cuemby Test es una es una prueba que pretende construir y consumir una replica 
 ## Comenzando 🚀
 
 _Para probar el funcionamiento de nuestro proyecto, podemos realizar la descarga del repositorio ubicado en Github._
-* <a href="https://github.com/steven-cruz/cuemby-test"><img src="https://i1.wp.com/unaaldia.hispasec.com/wp-content/uploads/2021/04/github.png?fit=1150%2C465&ssl=1" width="80px"></a>
+* <a href="https://github.com/steven-cruz/cuemby-test"><img src="https://github.com/steven-cruz/cuemby-test/blob/master/docs/img/github.png?raw=true" width="80px"></a>
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+* _Estando ubicados en el GitHub seleccionaremos la opción **Code** el cual se encuentra en un recuadro de color verde, el siguiente paso sera seleccionar la opción **Download ZIP** y este iniciara con la descarga del archivo._
 
+## Despliegue
+
+_Cuando la descarga del archivo haya finalizado haremos la descompresión y nos debera quedar una carpeta con el nombre **cuemby-test-master**_
 
 ### Pre-requisitos 📋
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+_Para poner en marcha el proyecto nos ayudaremos de una consola, en mi caso utilizo el sistema operativo Ubuntu 20.04 pero las instrucciones son las mismas para otros sistemas._
+
+_Desde la consola abriremos la ubicación de la carpeta que acabamos de descomprimir, esto lo podemos lograr abriendo la carpeta y luego con clic derecho seleccionamos **Abrir en una terminal** como se muestra a continuación._
 
 ```
 Da un ejemplo
