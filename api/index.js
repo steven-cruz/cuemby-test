@@ -15,9 +15,9 @@ const schema  = {
 }
 
 fastify.register(require('fastify-cors'), {
-    origin:['*', 'http://127.0.0.1', 'http://127.0.0.1:80', 'http://127.0.0.1/#/', 'http://127.0.0.1:8080', 'http://127.0.0.1:5500'],
+    origin: true,
     allowedHeaders: ['Origin', 'Content-Type', 'Authorization', 'Accept', 'x-api-key'],
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    methods: ["GET","HEAD","PUT","PATCH","POST","DELETE"],
     optionsSuccessStatus: 200,
     preflightContinue: true
 });

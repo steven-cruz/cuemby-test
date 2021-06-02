@@ -67,6 +67,7 @@ async function deletePlayer(id) {
 }
 
 async function getTeamPaginated(team, page) {
+    console.log('Body params:', team, page)
     try {
         const totalPlayers = await db.sequelize.models.players.count({
             where: db.sequelize.where(
@@ -85,6 +86,7 @@ async function getTeamPaginated(team, page) {
             offset: offset,
             limit: limit
         });
+        console.log(players);
         const response = {
             Page: page,
             TotalPages: totalPages,
@@ -96,7 +98,8 @@ async function getTeamPaginated(team, page) {
             response.Players.push({
                 name: player.name,
                 position: player.position,
-                nation: player.nation
+                nation: player.nation,
+                team:player.team
             })
         }
         return response

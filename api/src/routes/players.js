@@ -26,7 +26,7 @@ module.exports = function (fastify, schema) {
             } else {
                 reply.statusCode = 200
                 console.log("Player found.")
-                reply.send({
+                reply.header('Access-Control-Allow-Origin', '*').send({
                     data: response,
                     success: true,
                     message: "Player found."
@@ -56,9 +56,14 @@ module.exports = function (fastify, schema) {
                 message: "Field name is required."
             })
         } else {
+            console.log('enter teampaginated', request.body)
             const response = await getTeamPaginated(request.body.Name, request.body.Page);
             reply.statusCode = 200
-            reply.send(response)
+            reply.header('Access-Control-Allow-Origin', '*').send({
+                data: response,
+                success: true,
+                message: "Players found."
+            })
         }
     });
 }

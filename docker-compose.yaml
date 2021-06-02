@@ -11,18 +11,19 @@ services:
             - 3000:3000
         depends_on:
             - db
+    web:
+        build:
+            context: ./web
+            dockerfile: ./Dockerfile
+        command: http-server ./public
+        ports:
+            - 8080:8080
     db:
         image: "postgres"
         env_file:
             - .env.db
         volumes:
-            - db:/var/lib/postgresql/data/
+            - db:/var/lib/postgresql/data
+
 volumes:
     db:
-
-    # web:
-    #     build:
-    #         context: ./web
-    #         dockerfile: ./Dockerfile
-    #     ports:
-    #         - 3001:3001

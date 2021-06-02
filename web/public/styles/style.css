@@ -3,6 +3,7 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}
 
+
 /* ====================================
     Principal    */
 
@@ -19,26 +20,6 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 background: linear-gradient(90deg, rgba(0,0,0,0.5116421568627452) 0%, rgba(154,154,154,0.30155812324929976) 12%, rgba(170,170,170,0.2819502801120448) 21%, rgba(191,194,194,0.09707633053221287) 38%, rgba(255,255,255,0.055059523809523836) 50%, rgba(195,195,195,0.06626400560224088) 62%, rgba(170,170,170,0.14469537815126055) 75%, rgba(154,154,154,0.30155812324929976) 88%, rgba(0,0,0,0.5088410364145659) 100%);
 }
 
-.player-card{
-    max-width: 23%;
-}
-
-@media screen and (max-width: 850px) {
-    .player-card{
-        max-width: 29%;
-    }
-}
-@media screen and (max-width: 1024px) {
-    .player-card{
-        max-width: 28%;
-    }
-}
-@media screen and (max-width: 415px) {
-    .player-card{
-        max-width: 95%;
-    }
-}
-
 .bg-card{
     background-image: linear-gradient(
         rgb(0, 0, 0),
@@ -51,7 +32,6 @@ background: linear-gradient(90deg, rgba(0,0,0,0.5116421568627452) 0%, rgba(154,1
     background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid rgba(37, 0, 97, 0.644);
-    padding-left: 3%;
 }
 
 .contenedor{
@@ -60,8 +40,53 @@ background: linear-gradient(90deg, rgba(0,0,0,0.5116421568627452) 0%, rgba(154,1
     margin-right: auto;
 }
 
-@media screen and (max-width: 992px) {
-    aside{
+/* ====================================
+    Media Query    */
+@media screen and (min-width: 1250px) {
+    .player-card{
+        max-width: 18%;
+    }
+    .bg-card{
+        background-image: linear-gradient(
+            rgb(0, 0, 0),
+            rgba(0, 0, 0, 0.678),
+            rgb(0, 0, 0)
+        ),url(../img/cancha.png);
+        color: rgb(255, 255, 255);
+        box-shadow:1px 2px 15px 2px rgba(255, 255, 255, 0.288);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 3px solid rgba(37, 0, 97, 0.644);
+        padding-left: 3%;
+    }
+}
+@media screen and (max-width: 1249px) {
+    .player-card{
+        max-width: 22%;
+    }
+}
+@media screen and (max-width: 870px) {
+    .player-card{
+        max-width: 30%;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media screen and (max-width: 665px) {
+    .player-card{
+        max-width: 45%;
+    }
+    .logo{
+        display: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .player-card{
+        max-width: 95%;
+    }
+    .logo{
         display: none;
     }
 }
