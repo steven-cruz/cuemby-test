@@ -1,49 +1,79 @@
 # Cuemby FIFA12 Ultime Team
 
-_Cuemby Test es una es una prueba que pretende construir y consumir una replica de la api FIFA 12 Ultime Team permitiendo hacer busqueda de judaores y equipos._
+Cuemby Test es una es una prueba que pretende construir y consumir una replica de la api FIFA 12 Ultime Team permitiendo hacer busqueda de judaores y equipos.
 
 ## Comenzando 🚀
 
-_Para probar el funcionamiento de nuestro proyecto, podemos realizar la descarga del repositorio ubicado en Github._
+Para probar el funcionamiento de nuestro proyecto, podemos realizar la descarga del repositorio ubicado en Github.
 * <a href="https://github.com/steven-cruz/cuemby-test"><img src="https://github.com/steven-cruz/cuemby-test/blob/master/docs/img/github.png?raw=true" width="80px"></a>
 
-* _Estando ubicados en el GitHub seleccionaremos la opción **Code** el cual se encuentra en un recuadro de color verde, el siguiente paso sera seleccionar la opción **Download ZIP** y este iniciara con la descarga del archivo._
+* Estando ubicados en el GitHub seleccionaremos la opción **Code** el cual se encuentra en un recuadro de color verde, el siguiente paso sera seleccionar la opción **Download ZIP** y este iniciara con la descarga del archivo.
 
 ## Despliegue
 
-_Cuando la descarga del archivo haya finalizado haremos la descompresión y nos debera quedar una carpeta con el nombre **cuemby-test-master**_
+Cuando la descarga del archivo haya finalizado haremos la descompresión y nos debera quedar una carpeta con el nombre **cuemby-test-master**
 
 ### Pre-requisitos 📋
 
-_Para poner en marcha el proyecto nos ayudaremos de una consola, en mi caso utilizo el sistema operativo Ubuntu 20.04 pero las instrucciones son las mismas para otros sistemas._
+Para poner en marcha el proyecto nos ayudaremos de una consola, en mi caso utilizo el sistema operativo Ubuntu 20.04 pero las instrucciones son las mismas para otros sistemas.
 
-_Desde la consola abriremos la ubicación de la carpeta que acabamos de descomprimir, esto lo podemos lograr abriendo la carpeta y luego con clic derecho seleccionamos **Abrir en una terminal** como se muestra a continuación._
+Desde la consola abriremos la ubicación de la carpeta que acabamos de descomprimir, esto lo podemos lograr abriendo la carpeta y luego con clic derecho seleccionamos **Abrir en una terminal** como se muestra a continuación.
+
+![Abrir consola](https://github.com/steven-cruz/cuemby-test/blob/master/docs/img/Selecci%C3%B3n_060.png?raw=true)
+
+El siguiente paso sera abrir el directorio llamado api; primero comprobaremos que la ruta de nuestra consola sea similar a la siguiente:
 
 ```
-Da un ejemplo
+jhonatan@asus:~/Descargas/cuemby-test-master$
+```
+Para abrir el directorio en mención escribiremos en la consola **cd api** seguido de un enter. Nuestra nueva ruta debe ser similar a la siguiente.
+
+```
+jhonatan@asus:~/Descargas/cuemby-test-master/api$
 ```
 
 ### Instalación 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+Para que la api pueda ser visible desde un navegador debemos crear un entorno, ya que esta se encuentra en un docker y no permite ser visualizada.
 
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
+* El primer paso sera construir nuestros contenedores, esto lo haremos con el siguiente comando:
 
 ```
-hasta finalizar
+sudo docker-compose up --build
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png?v8" width="13px"> **En caso de ser requerida una contraseña la introduciremos**
+
+* Cuando haya terminado, abrimos una nueva terminal y ejecutamos los siguientes comandos:
+
+```
+sudo ps
+```
+_En la información mostrada buscaremos la columna **NAMES**  y veremos en nombre de nuestro contenedor, en nuestro caso es **cuemby-test-master_api_1**_
+
+* El siguiente comando sera:
+```
+sudo docker exec -it cuemby-test-master_api_1 bash
+```
+_El comando anterior nos creara una nueva ruta en la consola, ahora pondremos el ultimo comando para terminar de construir nuestra api._
+
+```
+npm run extract
+```
+
+_El comando anterior recopilara toda la información que utilizaremos en nuestra api y al mismo tiempo la escribirá en una base de datos la cual nos permitirá el manejo de la información_ 
+<img src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png?v8" width="13px"> **Este paso puede tomar un tiempo** <img src="https://github.githubassets.com/images/icons/emoji/unicode/23f3.png?v8" width="13px">
 
 ## Ejecutando las pruebas ⚙️
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+Ahora para poder ver la api en funcionamiento solo debemos abrir el navegador de internet de nuestra preferencia, en el campo de la URL escribiremos lo siguiente:
+
+```
+http://localhost:8080/
+```
+
+Para iniciar una búsqueda en el campo de **Search** pondremos una palabra o letra clave para obtener los resultados de  los jugadores, como opciones podemos filtrar las búsquedas por orden ascendente o descendente.
+
 
 ### Analice las pruebas end-to-end 🔩
 
