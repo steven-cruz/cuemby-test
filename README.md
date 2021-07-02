@@ -1,6 +1,6 @@
-# Cuemby FIFA12 Ultime Team
+<h1 align="center"><b>Cuemby FIFA12 Ultime Team</b></h1>
 
-Cuemby Test es una prueba que pretende construir y consumir una replica de la api FIFA 12 Ultime Team permitiendo hacer busqueda de judaores y equipos.
+Cuemby Test es una prueba que pretende construir y consumir una replica de la api FIFA 12 Ultime Team permitiendo hacer busqueda de jugadores y equipos.
 
 ## Comenzando 🚀
 
@@ -92,13 +92,8 @@ sudo docker-compose down -v
 
 ## Autor ✒️
 
-**Jhonatan Legarda**  - [LinkedIn](https://www.linkedin.com/in/jhonatan-legarda/)
-
-
-## Expresiones de Gratitud 🎁
-
-* Gracias a [Cuemby](https://cuemby.com/) por la oportunidad brindada. 🤓
-
-
+**Jhonatan Legarda**  
+* [LinkedIn](https://www.linkedin.com/in/jhonatan-legarda/)
+* [Twitter](https://twitter.com/JhonatanLegarda)
 ---
 ⌨️ con ❤️ por [Jhonatan Legarda](https://twitter.com/JhonatanLegarda) 😊
